@@ -67,7 +67,7 @@ function Hero() {
         <p className="hero-tagline">{profile.tagline}</p>
         <div className="cta-row">
           <a className="btn primary" href="#projects">View Projects</a>
-          <a className="btn secondary" href="./Thiyagarajan_A_Resume.txt" download>
+          <a className="btn secondary" href="./Thiyagarajan_resume.pdf" download>
             <Download size={18} /> Download Resume
           </a>
         </div>
