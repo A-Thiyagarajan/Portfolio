@@ -10,17 +10,21 @@ on:
 permissions:
   contents: write
   pages: write
+  id-token: write
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -49,7 +53,28 @@ jobs:
           publish_dir: ./dist
           force_orphan: true
 
-      - name: Configure repository Pages source
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy with GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  configure-branch-source:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Try to configure repository Pages source
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPOSITORY: ${{ github.repository }}
@@ -78,6 +103,7 @@ jobs:
 
           cat /tmp/pages_response.json
           if [ "$STATUS" -lt 200 ] || [ "$STATUS" -ge 300 ]; then
-            echo "Unable to configure Pages source automatically. Set Settings > Pages > Deploy from branch > gh-pages / root."
+            echo "Unable to configure Pages source automatically."
+            echo "If the site is blank, set Settings > Pages > Source to GitHub Actions or gh-pages / root."
             exit 1
           fi
