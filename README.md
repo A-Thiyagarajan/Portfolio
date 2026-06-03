@@ -19,9 +19,15 @@ npm run build
 
 This repository includes a GitHub Actions workflow at `.github/workflows/pages.yml`.
 
-After pushing to GitHub, open the repository on GitHub and go to:
+After pushing to GitHub, open the repository on GitHub and set Pages to use GitHub Actions:
 
 `Settings -> Pages -> Build and deployment -> Source -> GitHub Actions`
+
+Then open:
+
+`Actions -> Deploy Portfolio to GitHub Pages`
+
+Wait for the workflow to complete successfully.
 
 The public website will be deployed at:
 
