@@ -19,15 +19,11 @@ npm run build
 
 This repository includes a GitHub Actions workflow at `.github/workflows/pages.yml`.
 
-After pushing to GitHub, open the repository on GitHub and set Pages to use GitHub Actions:
+On every push to `main`, the workflow builds the website and publishes the production files to the `gh-pages` branch.
 
-`Settings -> Pages -> Build and deployment -> Source -> GitHub Actions`
+If the page is blank, open the repository on GitHub and set:
 
-Then open:
-
-`Actions -> Deploy Portfolio to GitHub Pages`
-
-Wait for the workflow to complete successfully.
+`Settings -> Pages -> Build and deployment -> Source -> Deploy from a branch -> gh-pages -> / root`
 
 The public website will be deployed at:
 
