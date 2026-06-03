@@ -1,0 +1,64 @@
+Thiyagarajan A
+AI/ML Engineer | Deep Learning Developer | FastAPI Backend Engineer | Full Stack AI Developer
+Chennai, Tamil Nadu, India
+Email: athiyagarajan01@gmail.com
+Phone: +91 8870175727
+LinkedIn: linkedin.com/in/a-thiyagarajan
+GitHub: github.com/A-Thiyagarajan
+
+SUMMARY
+Artificial Intelligence and Machine Learning graduate with expertise in Deep Learning, Computer Vision, FastAPI, TensorFlow, PyTorch, PostgreSQL, and Full Stack Development. Passionate about developing production-ready AI solutions that solve real-world problems through machine learning, automation, and intelligent web applications.
+
+TECHNICAL SKILLS
+Programming: Python, Java, JavaScript, SQL, HTML, CSS
+AI: Machine Learning, Deep Learning, Computer Vision, NLP, Generative AI, Neural Networks, Predictive Analytics
+Frameworks: TensorFlow, PyTorch, Keras, Scikit-Learn, OpenCV, FastAPI
+Databases: PostgreSQL, MySQL, MongoDB, Firebase
+Developer Tools: Git, GitHub, Postman, Linux, VS Code, Jupyter Notebook
+
+PROJECTS
+Kidney Tumor Detection Using Deep Learning
+- Developed an AI-powered medical imaging system using CNNs trained on over 12,500 medical images.
+- Achieved 92% prediction accuracy.
+- Built OpenCV preprocessing pipeline and TensorFlow/Keras implementation.
+- Deployed web workflow for real-time prediction.
+
+Intelligent Examination Submission Framework
+- Developed a FastAPI-powered middleware platform integrating Moodle and PostgreSQL.
+- Automated digital examination workflows and answer sheet processing.
+- Designed secure, scalable REST API architecture.
+
+EXPERIENCE
+National Small Industries Corporation (NSIC) | Arjun Vision Tech
+Mobile Application Development Intern
+- Developed Android application modules.
+- Optimized UI responsiveness.
+- Collaborated in Agile development environment.
+- Performed application testing and debugging.
+
+ACHIEVEMENTS
+IIT Madras Shaastra Techathon 2024
+First Prize Winner among 100+ participating teams.
+
+EDUCATION
+Saveetha Engineering College
+Bachelor of Technology, Artificial Intelligence and Machine Learning
+CGPA: 8.10
+2022 - 2026
+
+TMHNU Matric Hr. Sec. School
+Higher Secondary Certificate
+89.66% | Tamil Nadu
+2021 - 2022
+
+TMHNU Matric Hr. Sec. School
+Secondary School Education
+93.4% | Tamil Nadu
+2019 - 2020
+
+CERTIFICATIONS
+Interactivity with JavaScript
+Basics of Python
+OpenCV Image Processing
+Introduction to Deep Learning
+UX Design for Web Developers
