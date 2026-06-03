@@ -1,2 +1,28 @@
 # Portfolio
-Artificial Intelligence and Machine Learning student with experience in deep learning, backend engineering, computer vision, and AI-powered web applications. Skilled in Python, TensorFlow, PyTorch, FastAPI, PostgreSQL, JavaScript, HTML, and CSS for building scalable machine learning systems and intelligent automation platforms.
+
+Professional portfolio website for Thiyagarajan A, built with React and Vite.
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Production Build
+
+```bash
+npm run build
+```
+
+## GitHub Pages Deployment
+
+This repository includes a GitHub Actions workflow at `.github/workflows/pages.yml`.
+
+After pushing to GitHub, open the repository on GitHub and go to:
+
+`Settings -> Pages -> Build and deployment -> Source -> GitHub Actions`
+
+The public website will be deployed at:
+
+`https://a-thiyagarajan.github.io/Portfolio/`
